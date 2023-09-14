@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --light_red: hsl(0, 100%, 67%, 0.1);
+  --orangey_yellow: hsl(39, 100%, 56%, 0.1);
+  --green_teal: hsl(166, 100%, 37%, 0.1);
+  --cobalt_blue: hsl(234, 85%, 45%, 0.1);
+
+  /* Background Gradient Colors */
+  --light_slate_blue: hsl(251, 100%, 63%);
+  --light_royal_blue: hsl(241, 81%, 54%);
+
+  /* Background gradient colors for the circle */
+  --violet_blue: hsla(256, 72%, 46%, 1);
+  --persian_blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light_lavender: hsl(241, 100%, 89%);
+  --dark_gray_blue: hsl(224, 30%, 27%);
+
+  --_lg-fz: 3rem;
+}
+
+body {
+  font-family: "Hanken Grotesk", Times, sans-serif;
+}
+
+.container {
+  min-width: 375px;
+}
+
+.layer_1 {
+  background: var(--voilet_blue);
+  text-align: center;
+  padding: 20px;
+}
+
+.l1_gradient {
+  background: linear-gradient(
+    to bottom,
+    var(--light_slate_blue),
+    var(--light_slate_blue),
+    var(--light_royal_blue)
+  );
+  /* border-radius: 100px 10px 50px 200px / 30px 0 0 0; */
+  /* 
+  tl-tr-br-bl
+  */
+  border-radius: 0px 0px 40px 40px;
+}
+.l1_gradient h2 {
+  font-size: 1.1rem;
+  color: var(--light_lavender);
+}
+.circle {
+  background: linear-gradient(0deg, var(--persian_blue), var(--violet_blue));
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 11px auto;
+}
+
+.circle .big_t {
+  font-size: 2.5rem;
+}
+.circle .small_t {
+  font-size: 0.9rem;
+}
+
+.circle_text .of {
+  margin-right: 4px;
+}
+
+.circle_text {
+  color: var(--light_lavender);
+}
+
+.great {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+p {
+  color: var(--light_lavender);
+  font-weight: 700;
+}
+
+.g_text {
+  font-size: 0.8rem;
+  /* width: min(90%, 230px); */
+  max-width: 230px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.big_t {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: var(--white);
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.layer_2 {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+
+tbody .table_d2 {
+  text-align: left;
+}
+
+tbody .table_d3 {
+  text-align: right;
+}
+
+img{
+} 
+
+.reaction {
+  background-color: var(--light_red);
+}
