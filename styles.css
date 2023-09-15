@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +12,7 @@
   --orangey_yellow: hsl(39, 100%, 56%, 0.1);
   --green_teal: hsl(166, 100%, 37%, 0.1);
   --cobalt_blue: hsl(234, 85%, 45%, 0.1);
+  --dark_blue: hsl(224, 30%, 27%);
 
   /* Background Gradient Colors */
   --light_slate_blue: hsl(251, 100%, 63%);
@@ -26,8 +27,6 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light_lavender: hsl(241, 100%, 89%);
   --dark_gray_blue: hsl(224, 30%, 27%);
-
-  --_lg-fz: 3rem;
 }
 
 body {
@@ -115,7 +114,6 @@ p {
 
 table {
   border-collapse: collapse;
-  margin-top: 30px;
 }
 
 .layer_2 {
@@ -125,18 +123,76 @@ table {
   margin: 0 auto;
   padding: 30px 30px;
 }
-
-tbody .table_d2 {
-  text-align: left;
+tbody > tr {
+  display: block;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  margin: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
-tbody .table_d3 {
-  text-align: right;
+svg {
+  display: inline-block;
 }
 
-img{
-} 
+.table_dp1 {
+  color: hsl(0, 100%, 67%);
+  font-weight: medium;
+}
+.table_dp2 {
+  color: hsl(39, 100%, 56%);
+}
+.table_dp3 {
+  color: hsl(166, 100%, 37%);
+}
+.table_dp4 {
+  color: hsl(234, 85%, 45%);
+}
 
 .reaction {
-  background-color: var(--light_red);
+  --bg-color: var(--light_red);
+}
+
+.memory {
+  --bg-color: var(--orangey_yellow);
+}
+.verbal {
+  --bg-color: var(--green_teal);
+}
+.visual {
+  --bg-color: var(--cobalt_blue);
+}
+
+.table_drp {
+  font-weight: 700;
+}
+
+.summary {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.button_t {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: var(--white);
+  font-weight: 500;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 50px;
+  border-style: none;
+  margin: 0.5rem;
+  background-color: var(--dark_blue);
+}
+.test {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
 }
