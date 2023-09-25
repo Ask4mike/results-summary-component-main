@@ -27,6 +27,7 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light_lavender: hsl(241, 100%, 89%);
   --dark_gray_blue: hsl(224, 30%, 27%);
+  --dark_violet: hsl(246, 60%, 81%);
 }
 
 body {
@@ -34,13 +35,15 @@ body {
 }
 
 .container {
-  min-width: 375px;
+  display: flex;
+  flex-direction: column;
 }
 
 .layer_1 {
-  background: var(--voilet_blue);
+  /* margin: 0 auto; */
   text-align: center;
-  padding: 20px;
+  /* tl-tr-br-bl */
+  border-radius: 0px 0px 40px 40px;
 }
 
 .l1_gradient {
@@ -50,82 +53,97 @@ body {
     var(--light_slate_blue),
     var(--light_royal_blue)
   );
-  /* border-radius: 100px 10px 50px 200px / 30px 0 0 0; */
-  /* 
-  tl-tr-br-bl
-  */
-  border-radius: 0px 0px 40px 40px;
 }
-.l1_gradient h2 {
-  font-size: 1.1rem;
-  color: var(--light_lavender);
-}
+
 .circle {
-  background: linear-gradient(0deg, var(--persian_blue), var(--violet_blue));
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin: 11px auto;
+  background: linear-gradient(180deg, var(--violet_blue), var(--persian_blue));
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
 }
 
-.circle .big_t {
-  font-size: 2.5rem;
-}
-.circle .small_t {
-  font-size: 0.9rem;
-}
-
-.circle_text .of {
-  margin-right: 4px;
-}
-
-.circle_text {
+h2 {
+  font-size: 1rem;
   color: var(--light_lavender);
+  margin: 1em;
+}
+
+.big_t {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.small_t {
+  color: var(--dark_violet);
 }
 
 .great {
   color: var(--white);
-  font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.2rem;
 }
-
-p {
-  color: var(--light_lavender);
-  font-weight: 700;
-}
-
 .g_text {
-  font-size: 0.8rem;
+  color: var(--light_lavender);
+  font-size: 1rem;
   /* width: min(90%, 230px); */
-  max-width: 230px;
-  width: 90%;
-  margin: 0 auto;
+  max-width: 255px;
+  /* width: 60%; */
+  text-align: center;
+  margin: 27px auto;
 }
 
-.big_t {
-  font-size: 1.2em;
-  font-weight: 800;
-  color: var(--white);
+.layer_2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px;
+}
+
+.summary {
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 table {
   border-collapse: collapse;
 }
-
-.layer_2 {
+.test {
   display: flex;
-  /* justify-content: space-between; */
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 30px 30px;
+  gap: 8px;
 }
+
+.reaction {
+  background: var(--light_red);
+  color: hsl(0, 100%, 67%);
+  font-weight: bold;
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.memory {
+  background: var(--orangey_yellow);
+  color: hsl(39, 100%, 56%);
+  font-weight: bold;
+  border: 1px solid hsl(39, 100%, 56%);
+}
+.verbal {
+  background: var(--green_teal);
+  color: hsl(166, 100%, 37%);
+  font-weight: bold;
+  border: 1px solid hsl(166, 100%, 37%);
+}
+.visual {
+  background: var(--cobalt_blue);
+  color: hsl(234, 85%, 45%);
+  font-weight: bold;
+  border: 1px solid hsl(234, 85%, 45%);
+}
+
 tbody > tr {
-  display: block;
-  padding: 1rem;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,52 +153,12 @@ tbody > tr {
   text-align: center;
 }
 
-svg {
-  display: inline-block;
-}
-
-.table_dp1 {
-  color: hsl(0, 100%, 67%);
-  font-weight: medium;
-}
-.table_dp2 {
-  color: hsl(39, 100%, 56%);
-}
-.table_dp3 {
-  color: hsl(166, 100%, 37%);
-}
-.table_dp4 {
-  color: hsl(234, 85%, 45%);
-}
-
-.reaction {
-  --bg-color: var(--light_red);
-}
-
-.memory {
-  --bg-color: var(--orangey_yellow);
-}
-.verbal {
-  --bg-color: var(--green_teal);
-}
-.visual {
-  --bg-color: var(--cobalt_blue);
-}
-
 .table_drp {
-  font-weight: 700;
+  color: black;
 }
-
-.summary {
-  margin: 0.5rem;
-  font-size: 1rem;
-}
-
-.button_t {
-  font-size: 1rem;
-  font-weight: lighter;
-  color: var(--white);
-  font-weight: 500;
+.table_drp2 {
+  color: hsl(283, 5%, 74%);
+  font-weight: bold;
 }
 
 button {
@@ -190,9 +168,10 @@ button {
   margin: 0.5rem;
   background-color: var(--dark_blue);
 }
-.test {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-weight: 500;
+
+.button_t {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: var(--white);
+  font-weight: bold;
 }
