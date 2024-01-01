@@ -169,6 +169,16 @@ button {
   background-color: var(--dark_blue);
 }
 
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--light_slate_blue),
+    var(--light_slate_blue),
+    var(--light_royal_blue)
+  );
+  cursor: pointer;
+}
+
 .button_t {
   font-size: 1rem;
   font-weight: lighter;
