@@ -27,7 +27,7 @@ I started bringing the design to live by laying out the structure of the html, u
 
 I also added the colors used in the design to the variable so that it will be easy to switch the different colors I needed when styling a particular component of the page.
 
-It was fun and frustrating at some point to get the page to look exactly like the design, cause I was following a video to code along during which after applying certain styles to the page everything just breaks but having understood that it is when I break things and fix them, I boost my problem solving skills having to know what to do next time that I am faced with that kind of a problem.
+It was fun and frustrating at some point to get the page to look exactly like the design, which after applying certain styles to the page everything just breaks but having understood that it is when I break things and fix them, I boost my problem solving skills having to know what to do next time that I am faced with that kind of a problem.
 
 Building this project took a lot of time as i started it last year, and being able to make it look closely to the design given is a success for me and a happy one too. Looking forward to building much more better projects this year.🚀💯
 
